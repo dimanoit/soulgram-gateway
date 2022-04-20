@@ -1,12 +1,12 @@
 {
   "Routes":[
     {
-    "DownstreamPathTemplate":"/api/account/compact",
+    "DownstreamPathTemplate":"/api/userinfo",
     "DownstreamScheme":"https",
     "DownstreamHostAndPorts":[
       {
         "Host":"localhost",
-        "Port":"5002"
+        "Port":"5001"
       }
     ],
     "UpstreamPathTemplate":"/user-compact",
