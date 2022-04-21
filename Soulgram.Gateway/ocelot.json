@@ -13,7 +13,7 @@
       "UpstreamHttpMethod": ["GET"]
     },
     {
-      "DownstreamPathTemplate": "/api/search/user?userId={everything}",
+      "DownstreamPathTemplate": "/api/search/user?userId={userId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -21,8 +21,20 @@
           "Port": "5003"
         }
       ],
-      "UpstreamPathTemplate": "/posts/user/{everything}",
+      "UpstreamPathTemplate": "/posts/user/{userId}",
       "UpstreamHttpMethod": ["GET"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/posts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5003"
+        }
+      ],
+      "UpstreamPathTemplate": "/posts",
+      "UpstreamHttpMethod": ["POST"]
     }
   ]
 }
