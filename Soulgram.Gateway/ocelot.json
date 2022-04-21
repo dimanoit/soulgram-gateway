@@ -1,32 +1,28 @@
 {
-  "Routes":[
+  "Routes": [
     {
-    "DownstreamPathTemplate":"/api/userinfo",
-    "DownstreamScheme":"https",
-    "DownstreamHostAndPorts":[
-      {
-        "Host":"localhost",
-        "Port":"5001"
-      }
-    ],
-    "UpstreamPathTemplate":"/user-compact",
-    "UpstreamHttpMethod":[
-      "GET"
-    ]
+      "DownstreamPathTemplate": "/api/userinfo/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5001"
+        }
+      ],
+      "UpstreamPathTemplate": "/user-compact/{userId}",
+      "UpstreamHttpMethod": ["GET"]
     },
     {
-    "DownstreamPathTemplate":"/api/search/user?userId={everything}",
-    "DownstreamScheme":"https",
-    "DownstreamHostAndPorts":[
-      {
-        "Host":"localhost",
-        "Port":"5003"
-      }
-    ],
-    "UpstreamPathTemplate":"/posts/user/{everything}",
-    "UpstreamHttpMethod":[
-      "GET"
-    ]
+      "DownstreamPathTemplate": "/api/search/user?userId={everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5003"
+        }
+      ],
+      "UpstreamPathTemplate": "/posts/user/{everything}",
+      "UpstreamHttpMethod": ["GET"]
     }
   ]
 }
