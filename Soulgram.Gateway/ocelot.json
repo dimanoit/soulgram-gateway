@@ -35,6 +35,18 @@
       ],
       "UpstreamPathTemplate": "/posts",
       "UpstreamHttpMethod": ["POST"]
+    },
+    {
+      "DownstreamPathTemplate": "/api/articles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5003"
+        }
+      ],
+      "UpstreamPathTemplate": "/articles",
+      "UpstreamHttpMethod": ["POST"]
     }
   ]
 }
