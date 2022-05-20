@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/generalInterests",
+      "DownstreamPathTemplate": "/api/general-interests",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -10,7 +10,7 @@
         }
       ],
       "UpstreamPathTemplate": "/interests",
-      "UpstreamHttpMethod": ["GET"]
+      "UpstreamHttpMethod": ["GET", "POST"]
     },
     {
       "DownstreamPathTemplate": "/api/userinfo/{userId}",
