@@ -10,7 +10,10 @@
         }
       ],
       "UpstreamPathTemplate": "/interests",
-      "UpstreamHttpMethod": ["GET", "POST"]
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/userinfo/{userId}",
@@ -22,7 +25,9 @@
         }
       ],
       "UpstreamPathTemplate": "/user-compact/{userId}",
-      "UpstreamHttpMethod": ["GET"]
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/search/user?userId={userId}",
@@ -34,7 +39,9 @@
         }
       ],
       "UpstreamPathTemplate": "/posts/user/{userId}",
-      "UpstreamHttpMethod": ["GET"]
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/posts",
@@ -46,7 +53,9 @@
         }
       ],
       "UpstreamPathTemplate": "/posts",
-      "UpstreamHttpMethod": ["POST"]
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/posts/{postId}",
@@ -58,7 +67,9 @@
         }
       ],
       "UpstreamPathTemplate": "/posts/{postId}",
-      "UpstreamHttpMethod": ["DELETE"]
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ]
     },
     {
       "DownstreamPathTemplate": "/api/articles",
@@ -70,7 +81,9 @@
         }
       ],
       "UpstreamPathTemplate": "/articles",
-      "UpstreamHttpMethod": ["POST"]
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
     }
   ]
 }
