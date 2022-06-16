@@ -25,7 +25,7 @@
       "UpstreamHttpMethod": ["GET", "POST"]
     },
     {
-      "DownstreamPathTemplate": "/api/interests?userId={userId}",
+      "DownstreamPathTemplate": "/api/interests/{userId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
