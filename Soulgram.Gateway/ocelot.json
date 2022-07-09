@@ -61,7 +61,7 @@
       "UpstreamHttpMethod": ["GET"]
     },
     {
-      "DownstreamPathTemplate": "/api/search/user?userId={userId}",
+      "DownstreamPathTemplate": "/api/search/user?userId={userId}&currentUserId={currentUserId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -69,7 +69,7 @@
           "Port": "5003"
         }
       ],
-      "UpstreamPathTemplate": "/posts/user/{userId}",
+      "UpstreamPathTemplate": "/posts/user/{userId}/me/{currentUserId}",
       "UpstreamHttpMethod": ["GET"]
     },
     {
@@ -97,6 +97,18 @@
       "UpstreamHttpMethod": ["DELETE"]
     },
     {
+      "DownstreamPathTemplate": "api/likes/{postId}/users/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "5003"
+        }
+      ],
+      "UpstreamPathTemplate": "posts/{postId}/like?userId={userId}",
+      "UpstreamHttpMethod": ["DELETE"]
+    },
+    {
       "DownstreamPathTemplate": "/api/articles",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -110,3 +122,5 @@
     }
   ]
 }
+
+
