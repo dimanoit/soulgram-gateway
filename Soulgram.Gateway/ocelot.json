@@ -97,7 +97,7 @@
       "UpstreamHttpMethod": ["DELETE"]
     },
     {
-      "DownstreamPathTemplate": "api/likes/{postId}/users/{userId}",
+      "DownstreamPathTemplate": "/api/likes/{postId}/users/{userId}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -105,7 +105,7 @@
           "Port": "5003"
         }
       ],
-      "UpstreamPathTemplate": "posts/{postId}/like?userId={userId}",
+      "UpstreamPathTemplate": "/posts/{postId}/like?userId={userId}",
       "UpstreamHttpMethod": ["DELETE"]
     },
     {

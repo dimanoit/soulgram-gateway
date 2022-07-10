@@ -22,6 +22,6 @@ builder.Services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
 var app = builder.Build();
 app.UseRouting();
 app.UseCors("MyPolicy");
-app.UseOcelot();
+app.UseOcelot().Wait();
 app.MapGet("/", () => "Hello World!");
 app.Run();
