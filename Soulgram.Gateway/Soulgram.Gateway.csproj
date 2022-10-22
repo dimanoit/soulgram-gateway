@@ -13,4 +13,54 @@
         <PackageReference Include="Soulgram.Logging" Version="1.0.1"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <Compile Remove="Soulgram.Gateway.Domain\**"/>
+        <Compile Remove="Soulgram.Getway.IntegrationClients\**"/>
+        <Compile Remove="Soulgram.Getway.IntegrationClients.Ports\**"/>
+        <Compile Remove="Soulgram.Getway.Application\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Remove="Soulgram.Gateway.Domain\**"/>
+        <EmbeddedResource Remove="Soulgram.Getway.IntegrationClients\**"/>
+        <EmbeddedResource Remove="Soulgram.Getway.IntegrationClients.Ports\**"/>
+        <EmbeddedResource Remove="Soulgram.Getway.Application\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Soulgram.Gateway.Domain\**"/>
+        <None Remove="Soulgram.Getway.IntegrationClients\**"/>
+        <None Remove="Soulgram.Getway.IntegrationClients.Ports\**"/>
+        <None Remove="Soulgram.Getway.Application\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Remove="Soulgram.Gateway.Domain\**"/>
+        <Content Remove="Soulgram.Getway.IntegrationClients\**"/>
+        <Content Remove="Soulgram.Getway.IntegrationClients.Ports\**"/>
+        <Content Remove="Soulgram.Getway.Application\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <_ContentIncludedByDefault Remove="Soulgram.Gateway.Domain\obj\project.assets.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Gateway.Domain\obj\project.packagespec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Gateway.Domain\obj\Soulgram.Gateway.Domain.csproj.nuget.dgspec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients\obj\project.assets.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients\obj\project.packagespec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients\obj\Soulgram.Getway.IntegrationClients.csproj.nuget.dgspec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients.Ports\obj\project.assets.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients.Ports\obj\project.packagespec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.IntegrationClients.Ports\obj\Soulgram.Getway.IntegrationClients.Ports.csproj.nuget.dgspec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.Application\obj\project.assets.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.Application\obj\project.packagespec.json"/>
+        <_ContentIncludedByDefault Remove="Soulgram.Getway.Application\obj\Soulgram.Getway.Application.csproj.nuget.dgspec.json"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="Soulgram.Gateway.Domain\Soulgram.Gateway.Domain.csproj"/>
+        <ProjectReference Include="Soulgram.Getway.Application\Soulgram.Getway.Application.csproj"/>
+        <ProjectReference Include="Soulgram.Getway.IntegrationClients.Ports\Soulgram.Getway.IntegrationClients.Ports.csproj"/>
+        <ProjectReference Include="Soulgram.Getway.IntegrationClients\Soulgram.Getway.IntegrationClients.csproj"/>
+    </ItemGroup>
+
 </Project>
