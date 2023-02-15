@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Soulgram.Gateway.Domain\Soulgram.Gateway.Domain.csproj"/>
-        <ProjectReference Include="..\Soulgram.Getway.IntegrationClients.Ports\Soulgram.Getway.IntegrationClients.Ports.csproj"/>
+        <ProjectReference Include="..\Soulgram.Gateway.Domain\Soulgram.Gateway.Domain.csproj" />
+        <ProjectReference Include="..\Soulgram.Getway.IntegrationClients.Ports\Soulgram.Getway.IntegrationClients.Ports.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +18,10 @@
         <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
             <HintPath>..\..\..\..\Program Files\dotnet\shared\Microsoft.AspNetCore.App\6.0.10\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
         </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
     </ItemGroup>
 
 </Project>
